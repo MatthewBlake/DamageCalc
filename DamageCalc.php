@@ -15,6 +15,7 @@
 		<?php
 
 			$mons = json_decode(file_get_contents('fileName.json'));
+			$natures = json_decode(file_get_contents('natures.json'));
 
 		?>
 
@@ -248,6 +249,16 @@
 					</tr>
 				</tbody>
 			</table>
+
+			<br>
+
+			<div id="natures">
+				<label>Nature</label>
+				<select id="natures">
+					<option value="adamant"><?php echo $natures[0] -> name.' (+'.$natures[0] -> up.', -'.$natures[0] -> down.')'?></option>
+					<option value="bashful"><?php echo $natures[1] -> name?></option>
+				</select>
+			</div>
 		</div>
 
 		<script>
@@ -257,6 +268,8 @@
 				var y = IVs;
 				var z = EVs / 4;
 				var a = parseInt(x) + parseInt(y) + parseInt(z);
+				a += a/10;
+				a = parseInt(a);
 				return a;
 			}
 
