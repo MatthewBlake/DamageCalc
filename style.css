@@ -4,7 +4,7 @@ body{
 
 input{
 	width: 40px;
-	background-color: lightgrey;
+	background-color: white;
 }
 
 #title{
@@ -13,13 +13,14 @@ input{
 
 #modifiers{
 	width: 65px;
-	background-color: lightgrey;
+	background-color: white;
 }
 
 #mon1{
 	position: absolute;
   	top: 100px;
   	left:200px;
+  	background-color: lightgrey;
 }
 
 #monName{
@@ -44,5 +45,5 @@ input{
 	position: absolute;
   	right: 200px;
   	top: 100px;
-  	float:right;
+  	float: right;
 }
