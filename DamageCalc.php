@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 
-		<link rel="stylesheet" href="style">
+		<link rel="stylesheet" href="style.css">
 
 		<meta charset="UTF-8">
 
@@ -20,15 +20,28 @@
 
 		<div id="mon1">
 
+		<div id="monName">
 			<?php 
 				echo $mons[0] -> name; 
-				echo " - "; 
+			?>
+		</div>
+
+		<div id="typeOne">
+			<?php
 				echo $mons[0] -> type1 -> type; 
-				echo ", "; 
-				echo $mons[0] -> type2 -> type; 
+			?>
+		</div>
+
+		<div id="typeTwo">
+			<?php
+				echo $mons[0] -> type2 -> type;
+			?>
+		</div>
+
+			<?php 
 				echo nl2br ("\n"); 
 			?>
-
+		
 			<table>
 
 				<thead>
@@ -235,7 +248,6 @@
 					</tr>
 				</tbody>
 			</table>
-
 		</div>
 
 		<script>
