@@ -1,0 +1,26 @@
+input{
+	width: 40px;
+	background-color: lightgrey;
+}
+
+#title{
+	width: 120px;
+}
+
+#modifiers{
+	width: 65px;
+	background-color: lightgrey;
+}
+
+#mon1{
+	position: absolute;
+  	top: 100px;
+  	left:200px;
+}
+
+#mon2{
+	position: absolute;
+  	right: 200px;
+  	top: 100px;
+  	float:right;
+}

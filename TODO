@@ -1,0 +1,42 @@
+To Do:
+
+---------
+
+Pokemon:
+		1	Name
+		2	Stats
+		3	Type
+		4	Nature
+		5	Moves
+		6	Ability
+		7	Item
+		8	Status
+
+
+Items:
+		1	Times used
+		2	Effect
+		3	Effect on Ability
+		4	Effect on Pokemon
+		5	When is it used
+		6	Switch in/out
+
+Stats:
+		1	Boosts
+		2	Items
+		3	Weather/Terrain
+		4	Time changed for
+		5	Switch in/out
+		6	
+
+Damage:	
+		1	Amount
+		2	Critical
+		3	Super effective
+		4	Recoil
+		5	
+
+
+		var txt = '{"type1":{"type":"Normal"},"type2":{"type":"Flying"},"moveset":[],"name":"Pigeot","spDef":70,"def":75,"spd":101,"atk":80,"spAtk":70,"hp":83}'
+		var obj = JSON.parse(txt);
+		document.getElementById("demo").innerHTML = obj.name + " - " + obj.type1.type + ", " + obj.type2.type;
