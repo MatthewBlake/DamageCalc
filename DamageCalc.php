@@ -46,16 +46,16 @@
 							<label>HP</label>
 						</th>
 						<td>
-							<input class="base" value=<?php echo $mons[0] -> hp?>>
+							<input onchange="HPFunc()" id="HPBase1" value=<?php echo $mons[0] -> hp?>>
 						</td>
 						<td>
-							<input class="IVs" type="number" min="0" max="31" step="1" value="31">
+							<input onchange="HPFunc()" id="HPIVs1" type="number" min="0" max="31" step="1" value="31">
 						</td>
 						<td>
-							<input class="EVs" type="number" min="0" max="252" step="4" value="0">
+							<input onchange="HPFunc()" id="HPEVs1" type="number" min="0" max="252" step="4" value="0">
 						</td>
 						<td>
-							<span class="total"><?php echo $mons[0] -> hp?></span>
+							<span id="HPTotal1"></span>
 						</td>
 					</tr>
 
@@ -204,13 +204,13 @@
 							<label>Speed</label>
 						</th>
 						<td>
-							<input onchange="IVFunc()" id="SpdBase1" value=<?php echo $mons[0] -> spd?>>
+							<input onchange="SpdFunc()" id="SpdBase1" value=<?php echo $mons[0] -> spd?>>
 						</td>
 						<td>
-							<input onchange="IVFunc()" id="SpdIVs1" type="number" min="0" max="31" step="1" value="31">
+							<input onchange="SpdFunc()" id="SpdIVs1" type="number" min="0" max="31" step="1" value="31">
 						</td>
 						<td>
-							<input onchange="IVFunc()" id="SpdEVs1" type="number" min="0" max="252" step="4" value="0">
+							<input onchange="SpdFunc()" id="SpdEVs1" type="number" min="0" max="252" step="4" value="0">
 						</td>
 						<td>
 							<span id="SpdTotal1"></span>
@@ -248,9 +248,25 @@
 				return a;
 			}
 
-			function IVFunc(){
+			function totalHP(base, IVs, EVs){
+				var x = base * 2 + 110;
+				var y = IVs;
+				var z = EVs / 4;
+				var a = parseFloat(x) + parseFloat(y) + parseFloat(z);
+				return a;
+			}
+
+			function HPFunc(){
+				document.getElementById("HPTotal1").innerHTML = totalHP(document.getElementById("HPBase1").value, document.getElementById("HPIVs1").value, document.getElementById("HPEVs1").value);
+			}
+
+			function SpdFunc(){
 				document.getElementById("SpdTotal1").innerHTML = total(document.getElementById("SpdBase1").value, document.getElementById("SpdIVs1").value, document.getElementById("SpdEVs1").value);
 			}
+
+			document.getElementById("HPTotal1").innerHTML = totalHP(document.getElementById("HPBase1").value, document.getElementById("HPIVs1").value, document.getElementById("HPEVs1").value);
+
+
 
 			document.getElementById("SpdTotal1").innerHTML = total(document.getElementById("SpdBase1").value, document.getElementById("SpdIVs1").value, document.getElementById("SpdEVs1").value);
 
