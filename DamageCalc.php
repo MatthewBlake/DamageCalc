@@ -64,16 +64,16 @@
 							<label>Attack</label>
 						</th>
 						<td>
-							<input class="base" value=<?php echo $mons[0] -> atk?>>
+							<input onchange="AtkFunc()" id="AtkBase1" value=<?php echo $mons[0] -> atk?>>
 						</td>
 						<td>
-							<input class="IVs" type="number" min="0" max="31" step="1" value="31">
+							<input onchange="AtkFunc()" id="AtkIVs1" type="number" min="0" max="31" step="1" value="31">
 						</td>
 						<td>
-							<input class="EVs" type="number" min="0" max="252" step="4" value="0">
+							<input onchange="AtkFunc()" id="AtkEVs1" type="number" min="0" max="252" step="4" value="0">
 						</td>
 						<td>
-							<span class="total"><?php echo $mons[0] -> atk?></span>
+							<span id="AtkTotal1"><?php echo $mons[0] -> atk?></span>
 						</td>
 						<td>
 							<select id="modifiers" class="calc-trigger">
@@ -99,16 +99,16 @@
 							<label>Defence</label>
 						</th>
 						<td>
-							<input class="base" value=<?php echo $mons[0] -> def?>>
+							<input onchange="DefFunc()" id="DefBase1" value=<?php echo $mons[0] -> def?>>
 						</td>
 						<td>
-							<input class="IVs" type="number" min="0" max="31" step="1" value="31">
+							<input onchange="DefFunc()" id="DefIVs1" type="number" min="0" max="31" step="1" value="31">
 						</td>
 						<td>
-							<input class="EVs" type="number" min="0" max="252" step="4" value="0">
+							<input onchange="DefFunc()" id="DefEVs1" type="number" min="0" max="252" step="4" value="0">
 						</td>
 						<td>
-							<span class="total"><?php echo $mons[0] -> def?></span>
+							<span id="DefTotal1"><?php echo $mons[0] -> def?></span>
 						</td>
 						<td>
 							<select id="modifiers" class="calc-trigger">
@@ -134,16 +134,16 @@
 							<label>Sp. Atk</label>
 						</th>
 						<td>
-							<input class="base" value=<?php echo $mons[0] -> spAtk?>>
+							<input onchange="SpAtkFunc()" id="SpAtkBase1" value=<?php echo $mons[0] -> spAtk?>>
 						</td>
 						<td>
-							<input class="IVs" type="number" min="0" max="31" step="1" value="31">
+							<input onchange="SpAtkFunc()" id="SpAtkIVs1" type="number" min="0" max="31" step="1" value="31">
 						</td>
 						<td>
-							<input class="EVs" type="number" min="0" max="252" step="4" value="0">
+							<input onchange="SpAtkFunc()" id="SpAtkEVs1" type="number" min="0" max="252" step="4" value="0">
 						</td>
 						<td>
-							<span id="SpAtk" class="total"><?php echo ($mons[0] -> spAtk * 2) + 5?></span>
+							<span id="SpAtkTotal1" class="total"><?php echo ($mons[0] -> spAtk * 2) + 5?></span>
 						</td>
 						<td>
 							<select id="modifiers" class="calc-trigger">
@@ -169,16 +169,16 @@
 							<label>Sp. Def</label>
 						</th>
 						<td>
-							<input class="base" value=<?php echo $mons[0] -> spDef?>>
+							<input onchange="SpDefFunc()" id="SpDefBase1" value=<?php echo $mons[0] -> spDef?>>
 						</td>
 						<td>
-							<input class="IVs" type="number" min="0" max="31" step="1" value="31">
+							<input onchange="SpDefFunc()" id="SpDefIVs1" type="number" min="0" max="31" step="1" value="31">
 						</td>
 						<td>
-							<input class="EVs" type="number" min="0" max="252" step="4" value="0">
+							<input onchange="SpDefFunc()" id="SpDefEVs1" type="number" min="0" max="252" step="4" value="0">
 						</td>
 						<td>
-							<span class="total"><?php echo $mons[0] -> spDef?></span>
+							<span id="SpDefTotal1"><?php echo $mons[0] -> spDef?></span>
 						</td>
 						<td>
 							<select id="modifiers" class="calc-trigger">
@@ -244,7 +244,7 @@
 				var x = base * 2 + 5;
 				var y = IVs;
 				var z = EVs / 4;
-				var a = parseFloat(x) + parseFloat(y) + parseFloat(z);
+				var a = parseInt(x) + parseInt(y) + parseInt(z);
 				return a;
 			}
 
@@ -252,12 +252,28 @@
 				var x = base * 2 + 110;
 				var y = IVs;
 				var z = EVs / 4;
-				var a = parseFloat(x) + parseFloat(y) + parseFloat(z);
+				var a = parseInt(x) + parseInt(y) + parseInt(z);
 				return a;
 			}
 
 			function HPFunc(){
 				document.getElementById("HPTotal1").innerHTML = totalHP(document.getElementById("HPBase1").value, document.getElementById("HPIVs1").value, document.getElementById("HPEVs1").value);
+			}
+
+			function AtkFunc(){
+				document.getElementById("AtkTotal1").innerHTML = total(document.getElementById("AtkBase1").value, document.getElementById("AtkIVs1").value, document.getElementById("AtkEVs1").value);
+			}
+
+			function DefFunc(){
+				document.getElementById("DefTotal1").innerHTML = total(document.getElementById("DefBase1").value, document.getElementById("DefIVs1").value, document.getElementById("DefEVs1").value);
+			}
+
+			function SpAtkFunc(){
+				document.getElementById("SpAtkTotal1").innerHTML = total(document.getElementById("SpAtkBase1").value, document.getElementById("SpAtkIVs1").value, document.getElementById("SpAtkEVs1").value);
+			}
+
+			function SpDefFunc(){
+				document.getElementById("SpDefTotal1").innerHTML = total(document.getElementById("SpDefBase1").value, document.getElementById("SpDefIVs1").value, document.getElementById("SpDefEVs1").value);
 			}
 
 			function SpdFunc(){
@@ -266,7 +282,13 @@
 
 			document.getElementById("HPTotal1").innerHTML = totalHP(document.getElementById("HPBase1").value, document.getElementById("HPIVs1").value, document.getElementById("HPEVs1").value);
 
+			document.getElementById("AtkTotal1").innerHTML = total(document.getElementById("AtkBase1").value, document.getElementById("AtkIVs1").value, document.getElementById("AtkEVs1").value);
 
+			document.getElementById("DefTotal1").innerHTML = total(document.getElementById("DefBase1").value, document.getElementById("DefIVs1").value, document.getElementById("DefEVs1").value);
+
+			document.getElementById("SpAtkTotal1").innerHTML = total(document.getElementById("SpAtkBase1").value, document.getElementById("SpAtkIVs1").value, document.getElementById("SpAtkEVs1").value);
+
+			document.getElementById("SpDefTotal1").innerHTML = total(document.getElementById("SpDefBase1").value, document.getElementById("SpDefIVs1").value, document.getElementById("SpDefEVs1").value);
 
 			document.getElementById("SpdTotal1").innerHTML = total(document.getElementById("SpdBase1").value, document.getElementById("SpdIVs1").value, document.getElementById("SpdEVs1").value);
 
