@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style">
 
 		<meta charset="UTF-8">
 
@@ -27,21 +27,26 @@
 			?>
 		</div>
 
-		<div id="typeOne">
-			<?php
-				echo $mons[0] -> type1 -> type; 
-			?>
-		</div>
+		<div id="types">
 
-		<div id="typeTwo">
-			<?php
-				echo $mons[0] -> type2 -> type;
-			?>
-		</div>
+			<div id="typeOne">
+				<?php
+					echo $mons[0] -> type1 -> type; 
+				?>
+			</div>
+
+			<div id="typeTwo">
+				<?php
+					echo $mons[0] -> type2 -> type;
+				?>
+			</div>
 
 			<?php 
 				echo nl2br ("\n"); 
 			?>
+		</div>
+
+		<br>
 		
 			<table>
 

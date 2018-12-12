@@ -24,21 +24,43 @@ input{
 }
 
 #monName{
-	background-color: #A7DB8D;
 	font-family: sans-serif;
 	text-align: center;
+	border-radius: 40px;
+	margin-top: 20px;
+	border-radius: 40px;
+	color: white;
+  	background: green;
+  	padding: 5px;
+  	width: 100px;
+  	display: inline-block;
+}
+
+#types{
+	display: inline-block;
+	float: right;
 }
 
 #typeOne{
-	background-color: #78C850;
+	margin-top: 20px;
+	border-radius: 40px;
 	color: white;
 	text-align: center;
+  	background: #78C850;
+  	padding: 5px;
+  	width: 70px;
+  	display: inline-block;
 }
 
 #typeTwo{
+	margin-top: 20px;
 	background-color: #A040A0;
 	color: white;
 	text-align: center;
+	border-radius: 40px;
+  	padding: 5px;
+  	width: 70px;
+  	display: inline-block;
 }
 
 #mon2{
