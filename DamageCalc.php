@@ -257,16 +257,24 @@
 
 			<br>
 
-			<div id="natures">
-				<label>Nature</label>
-				<select id="natures">
-					<option value="adamant"><?php echo $natures[0] -> name.' (+'.$natures[0] -> up.', -'.$natures[0] -> down.')'?></option>
-					<option value="bashful" selected="selected"><?php echo $natures[1] -> name?></option>
-				</select>
-			</div>
-		</div>
+			<table>
+				<tbody>
+					<tr class="natures">
+						<th scope="row">
+							<label>Nature</label>
+						</th>
 
-		<script>
+						<td>
+							<select id="natures">
+								<option value="adamant"><?php echo $natures[0] -> name.' (+'.$natures[0] -> up.', -'.$natures[0] -> down.')'?></option>
+								<option value="bashful" selected="selected"><?php echo $natures[1] -> name?></option>
+							</select>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<script>
 
 			function total(base, IVs, EVs){
 				var x = base * 2 + 5;

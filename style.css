@@ -18,9 +18,10 @@ input{
 
 #mon1{
 	position: absolute;
-  	top: 100px;
-  	left:200px;
-  	background-color: lightgrey;
+	top: 100px;
+	left:200px;
+	background-color: lightgrey;
+	padding: 25px;
 }
 
 #monName{
@@ -30,10 +31,10 @@ input{
 	margin-top: 20px;
 	border-radius: 40px;
 	color: white;
-  	background: green;
-  	padding: 5px;
-  	width: 100px;
-  	display: inline-block;
+	background: green;
+	padding: 5px;
+	width: 100px;
+	display: inline-block;
 }
 
 #types{
@@ -46,10 +47,10 @@ input{
 	border-radius: 40px;
 	color: white;
 	text-align: center;
-  	background: #78C850;
-  	padding: 5px;
-  	width: 70px;
-  	display: inline-block;
+	background: #78C850;
+	padding: 5px;
+	width: 70px;
+	display: inline-block;
 }
 
 #typeTwo{
@@ -58,14 +59,14 @@ input{
 	color: white;
 	text-align: center;
 	border-radius: 40px;
-  	padding: 5px;
-  	width: 70px;
-  	display: inline-block;
+	padding: 5px;
+	width: 70px;
+	display: inline-block;
 }
 
 #mon2{
 	position: absolute;
-  	right: 200px;
-  	top: 100px;
-  	float: right;
+	right: 200px;
+	top: 100px;
+	float: right;
 }
