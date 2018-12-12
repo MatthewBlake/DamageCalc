@@ -265,12 +265,37 @@
 						</th>
 
 						<td>
-							<select id="natures">
+							<select id="nature">
 								<option value="adamant"><?php echo $natures[0] -> name.' (+'.$natures[0] -> up.', -'.$natures[0] -> down.')'?></option>
 								<option value="bashful" selected="selected"><?php echo $natures[1] -> name?></option>
 							</select>
 						</td>
 					</tr>
+
+					<tr>
+						<th scope="row" id="title">
+							<label>Ability</label>
+						</th>
+
+						<td>
+							<select id="ability">
+								<option value="adaptability">Adaptability</option>
+							</select>
+						</td>
+					</tr>
+
+					<tr>
+						<th scope="row" id="title">
+							<label>Item</label>
+						</th>
+
+						<td>
+							<select id="item">
+								<option id="abomasite">Abomasite</option>
+							</select>
+						</td>
+					</tr>
+					
 				</tbody>
 			</table>
 
