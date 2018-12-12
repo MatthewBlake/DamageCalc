@@ -260,7 +260,7 @@
 			<table>
 				<tbody>
 					<tr class="natures">
-						<th scope="row">
+						<th scope="row" id="title">
 							<label>Nature</label>
 						</th>
 

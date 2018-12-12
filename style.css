@@ -4,7 +4,6 @@ body{
 
 input{
 	width: 40px;
-	background-color: white;
 }
 
 #title{
@@ -13,7 +12,6 @@ input{
 
 #modifiers{
 	width: 65px;
-	background-color: white;
 }
 
 #mon1{
@@ -69,4 +67,8 @@ input{
 	right: 200px;
 	top: 100px;
 	float: right;
+}
+
+#natures{
+
 }
