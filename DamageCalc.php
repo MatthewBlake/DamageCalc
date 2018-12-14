@@ -41,9 +41,9 @@
 				?>
 			</div>
 
-			<?php 
-				echo nl2br ("\n"); 
-			?>
+			<br>
+			<br>
+
 		</div>
 
 		<br>
@@ -235,6 +235,7 @@
 							<span id="SpdTotal1"></span>
 						</td>
 						<td>
+						
 							<select id="modifiers" class="calc-trigger">
 								<option value="+6">+6</option>
 								<option value="+5">+5</option>
@@ -265,9 +266,32 @@
 						</th>
 
 						<td>
-							<select id="nature">
+							<select onchange="Func()" id="nature">
 								<option value="adamant"><?php echo $natures[0] -> name.' (+'.$natures[0] -> up.', -'.$natures[0] -> down.')'?></option>
 								<option value="bashful" selected="selected"><?php echo $natures[1] -> name?></option>
+								<option value="bold"><?php echo $natures[2] -> name.' (+'.$natures[2] -> up.', -'.$natures[2] -> down.')'?></option>
+								<option value="brave"><?php echo $natures[3] -> name.' (+'.$natures[3] -> up.', -'.$natures[3] -> down.')'?></option>
+								<option value="calm"><?php echo $natures[4] -> name.' (+'.$natures[4] -> up.', -'.$natures[4] -> down.')'?></option>
+								<option value="careful"><?php echo $natures[5] -> name.' (+'.$natures[5] -> up.', -'.$natures[5] -> down.')'?></option>
+								<option value="docile"><?php echo $natures[6] -> name?></option>
+								<option value="gentle"><?php echo $natures[7] -> name.' (+'.$natures[7] -> up.', -'.$natures[7] -> down.')'?></option>
+								<option value="hardy"><?php echo $natures[8] -> name?></option>
+								<option value="hasty"><?php echo $natures[9] -> name.' (+'.$natures[9] -> up.', -'.$natures[9] -> down.')'?></option>
+								<option value="impish"><?php echo $natures[10] -> name.' (+'.$natures[10] -> up.', -'.$natures[10] -> down.')'?></option>
+								<option value="jolly"><?php echo $natures[11] -> name.' (+'.$natures[11] -> up.', -'.$natures[11] -> down.')'?></option>
+								<option value="lax"><?php echo $natures[12] -> name.' (+'.$natures[12] -> up.', -'.$natures[12] -> down.')'?></option>
+								<option value="lonely"><?php echo $natures[13] -> name.' (+'.$natures[13] -> up.', -'.$natures[13] -> down.')'?></option>
+								<option value="mild"><?php echo $natures[14] -> name.' (+'.$natures[14] -> up.', -'.$natures[14] -> down.')'?></option>
+								<option value="modest"><?php echo $natures[15] -> name.' (+'.$natures[15] -> up.', -'.$natures[15] -> down.')'?></option>
+								<option value="naive"><?php echo $natures[16] -> name.' (+'.$natures[16] -> up.', -'.$natures[16] -> down.')'?></option>
+								<option value="naughty"><?php echo $natures[17] -> name.' (+'.$natures[17] -> up.', -'.$natures[17] -> down.')'?></option>
+								<option value="quiet"><?php echo $natures[18] -> name.' (+'.$natures[18] -> up.', -'.$natures[18] -> down.')'?></option>
+								<option value="quirky"><?php echo $natures[19] -> name?></option>
+								<option value="rash"><?php echo $natures[20] -> name.' (+'.$natures[20] -> up.', -'.$natures[20] -> down.')'?></option>
+								<option value="relaxed"><?php echo $natures[21] -> name.' (+'.$natures[21] -> up.', -'.$natures[21] -> down.')'?></option>
+								<option value="sassy"><?php echo $natures[22] -> name.' (+'.$natures[22] -> up.', -'.$natures[22] -> down.')'?></option>
+								<option value="serious"><?php echo $natures[23] -> name?></option>
+								<option value="timid"><?php echo $natures[24] -> name.' (+'.$natures[24] -> up.', -'.$natures[24] -> down.')'?></option>
 							</select>
 						</td>
 					</tr>
@@ -299,7 +323,7 @@
 				</tbody>
 			</table>
 
-			<script src="totals.js"></script>
+		<script src="totals.js"></script>
 
 	</body>
 

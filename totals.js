@@ -48,4 +48,10 @@ document.getElementById("SpAtkTotal1").innerHTML = total(document.getElementById
 
 document.getElementById("SpDefTotal1").innerHTML = total(document.getElementById("SpDefBase1").value, document.getElementById("SpDefIVs1").value, document.getElementById("SpDefEVs1").value);
 
-document.getElementById("SpdTotal1").innerHTML = total(document.getElementById("SpdBase1").value, document.getElementById("SpdIVs1").value, document.getElementById("SpdEVs1").value);
+//document.getElementById("SpdTotal1").innerHTML = total(document.getElementById("SpdBase1").value, document.getElementById("SpdIVs1").value, document.getElementById("SpdEVs1").value);
+
+function Func(){
+	var e = document.getElementById("nature");
+	var strUser = e.options[e.selectedIndex].text;
+	document.getElementById("SpdTotal1").innerHTML = strUser;
+}
