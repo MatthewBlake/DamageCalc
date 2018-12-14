@@ -53,5 +53,14 @@ document.getElementById("SpDefTotal1").innerHTML = total(document.getElementById
 function Func(){
 	var e = document.getElementById("nature");
 	var strUser = e.options[e.selectedIndex].text;
-	document.getElementById("SpdTotal1").innerHTML = strUser;
+	var plus = strUser.indexOf("+");
+	var comma = strUser.indexOf(",");
+	var minus = strUser.indexOf("-");
+	var bracket = strUser.indexOf(")");
+	var boost = strUser.substring(plus+1, comma);
+	var loss = strUser.substring(minus+1, bracket);
+
+	if(boost.equals("Atk")){
+		document.getElementById("AtkTotal1").innerHTML = parseInt((total(document.getElementById("AtkBase1").value, document.getElementById("AtkIVs1").value, document.getElementById("AtkEVs1").value))*1.1);
+	}
 }
