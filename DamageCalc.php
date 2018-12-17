@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 
-		<link rel="stylesheet" href="style">
+		<link rel="stylesheet" href="style.css">
 
 		<meta charset="UTF-8">
 
@@ -51,12 +51,12 @@
 			<table>
 
 				<thead>
-					<th id="title"></th>
+					<th scope="col" id="title"></th>
 					<th scope="col">Base</th>
 					<th scope="col">IVs</th>
 					<th scope="col">EVs</th>
-					<th scope="col">Total</th>
-					<th scope="col">Modifiers</th>
+					<th scope="col" id="total"></th>
+					<th scope="col" id="modifiers"></th>
 				</thead>
 
 				<tbody>
@@ -68,7 +68,7 @@
 							<input onchange="HPFunc()" id="HPBase1" value=<?php echo $mons[0] -> hp?>>
 						</td>
 						<td>
-							<input onchange="HPFunc()" id="HPIVs1" type="number" min="0" max="31" step="1" value="31">
+							<input onchange="HPFunc()" id="HPIVs1" type="number" min="0" max="31" step="1" value="31" placeholder="0">
 						</td>
 						<td>
 							<input onchange="HPFunc()" id="HPEVs1" type="number" min="0" max="252" step="4" value="0">

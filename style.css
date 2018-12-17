@@ -10,8 +10,12 @@ input{
 	width: 120px;
 }
 
+#total{
+	width: 40px;
+}
+
 #modifiers{
-	width: 65px;
+	width: 40px;
 }
 
 #mon1{

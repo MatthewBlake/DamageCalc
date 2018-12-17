@@ -112,4 +112,36 @@ function Func(){
 
 		document.getElementById("SpdTotal1").innerHTML = total(document.getElementById("SpdBase1").value, document.getElementById("SpdIVs1").value, document.getElementById("SpdEVs1").value);
 	}
+
+	if(loss === "Atk"){
+		document.getElementById("AtkTotal1").innerHTML = parseInt(total(document.getElementById("AtkBase1").value, document.getElementById("AtkIVs1").value, document.getElementById("AtkEVs1").value)*0.9);
+	}
+
+	else if(loss === "Def"){
+		document.getElementById("DefTotal1").innerHTML = parseInt(total(document.getElementById("DefBase1").value, document.getElementById("DefIVs1").value, document.getElementById("DefEVs1").value)*0.9);
+	}
+
+	else if(loss === "SpAtk"){
+		document.getElementById("SpAtkTotal1").innerHTML = parseInt(total(document.getElementById("SpAtkBase1").value, document.getElementById("SpAtkIVs1").value, document.getElementById("SpAtkEVs1").value)*0.9);
+	}
+
+	else if(loss === "SpDef"){
+		document.getElementById("SpDefTotal1").innerHTML = parseInt(total(document.getElementById("SpDefBase1").value, document.getElementById("SpDefIVs1").value, document.getElementById("SpDefEVs1").value)*0.9);
+	}
+
+	else if(loss === "Spe"){
+		document.getElementById("SpdTotal1").innerHTML = parseInt(total(document.getElementById("SpdBase1").value, document.getElementById("SpdIVs1").value, document.getElementById("SpdEVs1").value)*0.9);
+	}
+
+	else{
+		document.getElementById("AtkTotal1").innerHTML = total(document.getElementById("AtkBase1").value, document.getElementById("AtkIVs1").value, document.getElementById("AtkEVs1").value);
+
+		document.getElementById("DefTotal1").innerHTML = total(document.getElementById("DefBase1").value, document.getElementById("DefIVs1").value, document.getElementById("DefEVs1").value);
+
+		document.getElementById("SpAtkTotal1").innerHTML = total(document.getElementById("SpAtkBase1").value, document.getElementById("SpAtkIVs1").value, document.getElementById("SpAtkEVs1").value);
+
+		document.getElementById("SpDefTotal1").innerHTML = total(document.getElementById("SpDefBase1").value, document.getElementById("SpDefIVs1").value, document.getElementById("SpDefEVs1").value);
+
+		document.getElementById("SpdTotal1").innerHTML = total(document.getElementById("SpdBase1").value, document.getElementById("SpdIVs1").value, document.getElementById("SpdEVs1").value);
+	}
 }
