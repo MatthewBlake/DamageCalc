@@ -83,16 +83,16 @@
 							<label>Attack</label>
 						</th>
 						<td>
-							<input onchange="AtkFunc()" id="AtkBase1" value=<?php echo $mons[0] -> atk?>>
+							<input onchange="Func()" id="AtkBase1" value=<?php echo $mons[0] -> atk?>>
 						</td>
 						<td>
-							<input onchange="AtkFunc()" id="AtkIVs1" type="number" min="0" max="31" step="1" value="31">
+							<input onchange="Func()" id="AtkIVs1" type="number" min="0" max="31" step="1" value="31">
 						</td>
 						<td>
-							<input onchange="AtkFunc()" id="AtkEVs1" type="number" min="0" max="252" step="4" value="0">
+							<input onchange="Func()" id="AtkEVs1" type="number" min="0" max="252" step="4" value="0">
 						</td>
 						<td>
-							<span id="AtkTotal1"><?php echo $mons[0] -> atk?></span>
+							<span id="AtkTotal1"></span>
 						</td>
 						<td>
 							<select id="modifiers" class="calc-trigger">
@@ -118,16 +118,16 @@
 							<label>Defence</label>
 						</th>
 						<td>
-							<input onchange="DefFunc()" id="DefBase1" value=<?php echo $mons[0] -> def?>>
+							<input onchange="Func()" id="DefBase1" value=<?php echo $mons[0] -> def?>>
 						</td>
 						<td>
-							<input onchange="DefFunc()" id="DefIVs1" type="number" min="0" max="31" step="1" value="31">
+							<input onchange="Func()" id="DefIVs1" type="number" min="0" max="31" step="1" value="31">
 						</td>
 						<td>
-							<input onchange="DefFunc()" id="DefEVs1" type="number" min="0" max="252" step="4" value="0">
+							<input onchange="Func()" id="DefEVs1" type="number" min="0" max="252" step="4" value="0">
 						</td>
 						<td>
-							<span id="DefTotal1"><?php echo $mons[0] -> def?></span>
+							<span id="DefTotal1"></span>
 						</td>
 						<td>
 							<select id="modifiers" class="calc-trigger">
@@ -153,16 +153,16 @@
 							<label>Sp. Atk</label>
 						</th>
 						<td>
-							<input onchange="SpAtkFunc()" id="SpAtkBase1" value=<?php echo $mons[0] -> spAtk?>>
+							<input onchange="Func()" id="SpAtkBase1" value=<?php echo $mons[0] -> spAtk?>>
 						</td>
 						<td>
-							<input onchange="SpAtkFunc()" id="SpAtkIVs1" type="number" min="0" max="31" step="1" value="31">
+							<input onchange="Func()" id="SpAtkIVs1" type="number" min="0" max="31" step="1" value="31">
 						</td>
 						<td>
-							<input onchange="SpAtkFunc()" id="SpAtkEVs1" type="number" min="0" max="252" step="4" value="0">
+							<input onchange="Func()" id="SpAtkEVs1" type="number" min="0" max="252" step="4" value="0">
 						</td>
 						<td>
-							<span id="SpAtkTotal1" class="total"><?php echo ($mons[0] -> spAtk * 2) + 5?></span>
+							<span id="SpAtkTotal1"></span>
 						</td>
 						<td>
 							<select id="modifiers" class="calc-trigger">
@@ -188,16 +188,16 @@
 							<label>Sp. Def</label>
 						</th>
 						<td>
-							<input onchange="SpDefFunc()" id="SpDefBase1" value=<?php echo $mons[0] -> spDef?>>
+							<input onchange="Func()" id="SpDefBase1" value=<?php echo $mons[0] -> spDef?>>
 						</td>
 						<td>
-							<input onchange="SpDefFunc()" id="SpDefIVs1" type="number" min="0" max="31" step="1" value="31">
+							<input onchange="Func()" id="SpDefIVs1" type="number" min="0" max="31" step="1" value="31">
 						</td>
 						<td>
-							<input onchange="SpDefFunc()" id="SpDefEVs1" type="number" min="0" max="252" step="4" value="0">
+							<input onchange="Func()" id="SpDefEVs1" type="number" min="0" max="252" step="4" value="0">
 						</td>
 						<td>
-							<span id="SpDefTotal1"><?php echo $mons[0] -> spDef?></span>
+							<span id="SpDefTotal1"></span>
 						</td>
 						<td>
 							<select id="modifiers" class="calc-trigger">
@@ -223,13 +223,13 @@
 							<label>Speed</label>
 						</th>
 						<td>
-							<input onchange="SpdFunc()" id="SpdBase1" value=<?php echo $mons[0] -> spd?>>
+							<input onchange="Func()" id="SpdBase1" value=<?php echo $mons[0] -> spd?>>
 						</td>
 						<td>
-							<input onchange="SpdFunc()" id="SpdIVs1" type="number" min="0" max="31" step="1" value="31">
+							<input onchange="Func()" id="SpdIVs1" type="number" min="0" max="31" step="1" value="31">
 						</td>
 						<td>
-							<input onchange="SpdFunc()" id="SpdEVs1" type="number" min="0" max="252" step="4" value="0">
+							<input onchange="Func()" id="SpdEVs1" type="number" min="0" max="252" step="4" value="0">
 						</td>
 						<td>
 							<span id="SpdTotal1"></span>
