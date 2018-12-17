@@ -48,7 +48,7 @@ document.getElementById("SpAtkTotal1").innerHTML = total(document.getElementById
 
 document.getElementById("SpDefTotal1").innerHTML = total(document.getElementById("SpDefBase1").value, document.getElementById("SpDefIVs1").value, document.getElementById("SpDefEVs1").value);
 
-//document.getElementById("SpdTotal1").innerHTML = total(document.getElementById("SpdBase1").value, document.getElementById("SpdIVs1").value, document.getElementById("SpdEVs1").value);
+document.getElementById("SpdTotal1").innerHTML = total(document.getElementById("SpdBase1").value, document.getElementById("SpdIVs1").value, document.getElementById("SpdEVs1").value);
 
 function Func(){
 	var e = document.getElementById("nature");
@@ -60,7 +60,23 @@ function Func(){
 	var boost = strUser.substring(plus+1, comma);
 	var loss = strUser.substring(minus+1, bracket);
 
-	if(boost.equals("Atk")){
-		document.getElementById("AtkTotal1").innerHTML = parseInt((total(document.getElementById("AtkBase1").value, document.getElementById("AtkIVs1").value, document.getElementById("AtkEVs1").value))*1.1);
+	if(boost === "Atk"){
+		document.getElementById("AtkTotal1").innerHTML = parseInt(total(document.getElementById("AtkBase1").value, document.getElementById("AtkIVs1").value, document.getElementById("AtkEVs1").value)*1.1);
+	}
+
+	else if(boost === "Def"){
+		document.getElementById("DefTotal1").innerHTML = parseInt(total(document.getElementById("DefBase1").value, document.getElementById("DefIVs1").value, document.getElementById("DefEVs1").value)*1.1);
+	}
+
+	else if(boost === "SpAtk"){
+		document.getElementById("SpAtkTotal1").innerHTML = parseInt(total(document.getElementById("SpAtkBase1").value, document.getElementById("SpAtkIVs1").value, document.getElementById("SpAtkEVs1").value)*1.1);
+	}
+
+	else if(boost === "SpDef"){
+		document.getElementById("SpDefTotal1").innerHTML = parseInt(total(document.getElementById("SpDefBase1").value, document.getElementById("SpDefIVs1").value, document.getElementById("SpDefEVs1").value)*1.1);
+	}
+
+	else if(boost === "Spe"){
+		document.getElementById("SpdTotal1").innerHTML = parseInt(total(document.getElementById("SpdBase1").value, document.getElementById("SpdIVs1").value, document.getElementById("SpdEVs1").value)*1.1);
 	}
 }

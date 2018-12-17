@@ -323,7 +323,7 @@
 				</tbody>
 			</table>
 
-		<script src="totals.js"></script>
+		<script src="totals"></script>
 
 	</body>
 
