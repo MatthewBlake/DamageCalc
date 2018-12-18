@@ -52,6 +52,82 @@ public class Type{
 	public String getColour(){
 		return typeColour;
 	}
+
+	public double getNone(){
+		return none;
+	}
+
+	public double getNormal(){
+		return normal;
+	}
+
+	public double getGrass(){
+		return grass;
+	}
+
+	public double getFire(){
+		return fire;
+	}
+
+	public double getWater(){
+		return water;
+	}
+
+	public double getElectric(){
+		return electric;
+	}
+
+	public double getIce(){
+		return ice;
+	}
+
+	public double getFlying(){
+		return flying;
+	}
+
+	public double getBug(){
+		return bug;
+	}
+
+	public double getPoison(){
+		return poison;
+	}
+
+	public double getGround(){
+		return ground;
+	}
+
+	public double getRock(){
+		return rock;
+	}
+
+	public double getFighting(){
+		return fighting;
+	}
+
+	public double getPsychic(){
+		return psychic;
+	}
+
+	public double getGhost(){
+		return ghost;
+	}
+
+	public double getDragon(){
+		return dragon;
+	}
+
+	public double getDark(){
+		return dark;
+	}
+
+	public double getSteel(){
+		return steel;
+	}
+
+	public double getFairy(){
+		return fairy;
+	}
 }
 
 /*
