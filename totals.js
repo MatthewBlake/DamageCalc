@@ -2,6 +2,12 @@ document.getElementById("monName").style.background = document.getElementById("t
 document.getElementById("typeOne").style.background = document.getElementById("typeOne").getAttribute("value");
 document.getElementById("typeTwo").style.background = document.getElementById("typeTwo").getAttribute("value");
 
+document.getElementById("monName").style.background = document.getElementById("typeOne").getAttribute("value");
+document.getElementById("typeOne").style.background = document.getElementById("typeOne").getAttribute("value");
+document.getElementById("typeTwo").style.background = document.getElementById("typeTwo").getAttribute("value");
+
+
+
 if("lightgrey" === document.getElementById("typeTwo").getAttribute("value")){
 	document.getElementById("typeTwo").style.color = "lightgrey";
 }

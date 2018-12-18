@@ -1,22 +1,22 @@
-<div id="mon1">
+	<div id="mon2">
 
-		<div id="monName">
+		<div id="monName2">
 			<?php 
-				echo $mons[$x] -> name; 
+				echo $mons[$y] -> name; 
 			?>
 		</div>
 
 		<div id="types">
 
-			<div id="typeOne" value=<?php echo $mons[$x] -> type1 -> colour; ?>>
+			<div id="typeOne2" value=<?php echo $mons[$y] -> type1 -> colour; ?>>
 				<?php
-					echo $mons[$x] -> type1 -> type; 
+					echo $mons[$y] -> type1 -> type; 
 				?>
 			</div>
 
-			<div id="typeTwo" value=<?php echo $mons[$x] -> type2 -> colour; ?>>
+			<div id="typeTwo2" value=<?php echo $mons[$y] -> type2 -> colour; ?>>
 				<?php
-					echo $mons[$x] -> type2 -> type;
+					echo $mons[$y] -> type2 -> type;
 				?>
 			</div>
 
@@ -44,16 +44,16 @@
 							<label>HP</label>
 						</th>
 						<td>
-							<input onchange="HPFunc()" id="HPBase1" value=<?php echo $mons[$x] -> hp?>>
+							<input onchange="HPFunc()" id="HPBase2" value=<?php echo $mons[$y] -> hp?>>
 						</td>
 						<td>
-							<input onchange="HPFunc()" id="HPIVs1" type="number" min="0" max="31" step="1" value="31" placeholder="0">
+							<input onchange="HPFunc()" id="HPIVs2" type="number" min="0" max="31" step="1" value="31" placeholder="0">
 						</td>
 						<td>
-							<input onchange="HPFunc()" id="HPEVs1" type="number" min="0" max="252" step="4" value="0">
+							<input onchange="HPFunc()" id="HPEVs2" type="number" min="0" max="252" step="4" value="0">
 						</td>
 						<td>
-							<span id="HPTotal1"></span>
+							<span id="HPTotal2"></span>
 						</td>
 					</tr>
 
@@ -62,13 +62,13 @@
 							<label>Attack</label>
 						</th>
 						<td>
-							<input onchange="Func()" id="AtkBase1" value=<?php echo $mons[$x] -> atk?>>
+							<input onchange="Func()" id="AtkBase2" value=<?php echo $mons[$y] -> atk?>>
 						</td>
 						<td>
-							<input onchange="Func()" id="AtkIVs1" type="number" min="0" max="31" step="1" value="31">
+							<input onchange="Func()" id="AtkIVs2" type="number" min="0" max="31" step="1" value="31">
 						</td>
 						<td>
-							<input onchange="Func()" id="AtkEVs1" type="number" min="0" max="252" step="4" value="0">
+							<input onchange="Func()" id="AtkEVs2" type="number" min="0" max="252" step="4" value="0">
 						</td>
 						<td>
 							<span id="AtkTotal1"></span>
@@ -97,16 +97,16 @@
 							<label>Defence</label>
 						</th>
 						<td>
-							<input onchange="Func()" id="DefBase1" value=<?php echo $mons[$x] -> def?>>
+							<input onchange="Func()" id="DefBase2" value=<?php echo $mons[$y] -> def?>>
 						</td>
 						<td>
-							<input onchange="Func()" id="DefIVs1" type="number" min="0" max="31" step="1" value="31">
+							<input onchange="Func()" id="DefIVs2" type="number" min="0" max="31" step="1" value="31">
 						</td>
 						<td>
-							<input onchange="Func()" id="DefEVs1" type="number" min="0" max="252" step="4" value="0">
+							<input onchange="Func()" id="DefEVs2" type="number" min="0" max="252" step="4" value="0">
 						</td>
 						<td>
-							<span id="DefTotal1"></span>
+							<span id="DefTotal2"></span>
 						</td>
 						<td>
 							<select id="modifiers" class="calc-trigger">
@@ -132,16 +132,16 @@
 							<label>Sp. Atk</label>
 						</th>
 						<td>
-							<input onchange="Func()" id="SpAtkBase1" value=<?php echo $mons[$x] -> spAtk?>>
+							<input onchange="Func()" id="SpAtkBase2" value=<?php echo $mons[$y] -> spAtk?>>
 						</td>
 						<td>
-							<input onchange="Func()" id="SpAtkIVs1" type="number" min="0" max="31" step="1" value="31">
+							<input onchange="Func()" id="SpAtkIVs2" type="number" min="0" max="31" step="1" value="31">
 						</td>
 						<td>
-							<input onchange="Func()" id="SpAtkEVs1" type="number" min="0" max="252" step="4" value="0">
+							<input onchange="Func()" id="SpAtkEVs2" type="number" min="0" max="252" step="4" value="0">
 						</td>
 						<td>
-							<span id="SpAtkTotal1"></span>
+							<span id="SpAtkTotal2"></span>
 						</td>
 						<td>
 							<select id="modifiers" class="calc-trigger">
@@ -167,16 +167,16 @@
 							<label>Sp. Def</label>
 						</th>
 						<td>
-							<input onchange="Func()" id="SpDefBase1" value=<?php echo $mons[$x] -> spDef?>>
+							<input onchange="Func()" id="SpDefBase2" value=<?php echo $mons[$y] -> spDef?>>
 						</td>
 						<td>
-							<input onchange="Func()" id="SpDefIVs1" type="number" min="0" max="31" step="1" value="31">
+							<input onchange="Func()" id="SpDefIVs2" type="number" min="0" max="31" step="1" value="31">
 						</td>
 						<td>
-							<input onchange="Func()" id="SpDefEVs1" type="number" min="0" max="252" step="4" value="0">
+							<input onchange="Func()" id="SpDefEVs2" type="number" min="0" max="252" step="4" value="0">
 						</td>
 						<td>
-							<span id="SpDefTotal1"></span>
+							<span id="SpDefTotal2"></span>
 						</td>
 						<td>
 							<select id="modifiers" class="calc-trigger">
@@ -202,16 +202,16 @@
 							<label>Speed</label>
 						</th>
 						<td>
-							<input onchange="Func()" id="SpdBase1" value=<?php echo $mons[$x] -> spd?>>
+							<input onchange="Func()" id="SpdBase2" value=<?php echo $mons[$y] -> spd?>>
 						</td>
 						<td>
-							<input onchange="Func()" id="SpdIVs1" type="number" min="0" max="31" step="1" value="31">
+							<input onchange="Func()" id="SpdIVs2" type="number" min="0" max="31" step="1" value="31">
 						</td>
 						<td>
-							<input onchange="Func()" id="SpdEVs1" type="number" min="0" max="252" step="4" value="0">
+							<input onchange="Func()" id="SpdEVs2" type="number" min="0" max="252" step="4" value="0">
 						</td>
 						<td>
-							<span id="SpdTotal1"></span>
+							<span id="SpdTotal2"></span>
 						</td>
 						<td>
 						

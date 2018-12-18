@@ -68,7 +68,36 @@ input{
 
 #mon2{
 	position: absolute;
-	right: 200px;
 	top: 100px;
+	left: 800px;
+	background-color: #d3d3d3;
+	padding: 25px;
+	float: right;
+}
+
+#typeOne2{
+	background-color: black;
+	margin-top: 20px;
+	border-radius: 40px;
+	color: white;
+	text-align: center;
+	padding: 5px;
+	width: 70px;
+	display: inline-block;
+}
+
+#typeTwo2{
+	margin-top: 20px;
+	background-color: #A040A0;
+	color: white;
+	text-align: center;
+	border-radius: 40px;
+	padding: 5px;
+	width: 70px;
+	display: inline-block;
+}
+
+#types2{
+	display: inline-block;
 	float: right;
 }
