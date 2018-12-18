@@ -6,7 +6,7 @@
 
 			$mons = json_decode(file_get_contents('fileName.json'));
 			$natures = json_decode(file_get_contents('natures.json'));
-			$x = 1;
+			$x = 5;
 
 		?>
 
