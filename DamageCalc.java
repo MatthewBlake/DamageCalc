@@ -10,24 +10,24 @@ public class DamageCalc{
 
 		//														none 	normal	grass	fire 	water 	electric	ice 	flying	bug		poison	ground	rock	fighting	psychic	ghost	dragon	dark	steel 	fairy
 		Type none		= new Type("None", 		"lightgrey",	1, 		1,		1,		1, 		1, 		1,			1, 		1, 		1, 		1, 		1, 		1, 		1,			1,		1, 		1, 		1, 		1, 		1);
-		Type normal		= new Type("Normal",	"orange",		1,		1,		1,		1, 		1, 		1, 			1, 		1, 		1, 		1, 		1, 		0.5, 	1, 			1,		0, 		1, 		1, 		0.5, 	1);
+		Type normal		= new Type("Normal",	"#A8A878",		1,		1,		1,		1, 		1, 		1, 			1, 		1, 		1, 		1, 		1, 		0.5, 	1, 			1,		0, 		1, 		1, 		0.5, 	1);
 		Type grass		= new Type("Grass",		"#78C850",		1,		1,		0.5,	0.5, 	2, 		1,			1, 		0.5, 	0.5, 	0.5, 	2, 		2, 		1, 			1, 		1, 		0.5, 	1, 		0.5, 	1);
-		Type fire		= new Type("Fire",		"red",			1,		1,		2,		0.5,	0.5,	1,			2,		1,		2,		1,		1,		0.5,	1,			1,		1,		0.5,	1,		2,		1);
-		Type water		= new Type("Water",		"blue",			1,		1,		0.5,	2,		0.5,	1,			1,		1,		1,		1,		2,		2,		1,			1,		1,		0.5,	1,		1,		1);
-		Type electric	= new Type("Electric",	"yellow",		1,		1,		0.5,	1,		2,		0.5,		1,		2,		1,		1,		0,		1,		1,			1,		1,		0.5,	1,		1,		1);
-		Type ice		= new Type("Ice",		"lightblue",	1,		1,		2,		0.5,	0.5,	1,			0.5,	2,		1,		1,		2,		1,		1,			1,		1,		2,		1,		0.5,	1);
-		Type flying		= new Type("Flying",	"lightblue",	1,		1,		2,		1,		1,		0.5,		1,		1,		2,		1,		1,		0.5,	2,			1,		1,		1,		1,		0.5,	1);
-		Type bug		= new Type("Bug",		"green",		1,		1,		2,		0.5,	1,		1,			1,		0.5,	1,		0.5,	1,		1,		0.5,		2,		0.5,	1,		2,		0.5,	0.5);
+		Type fire		= new Type("Fire",		"#F08030",		1,		1,		2,		0.5,	0.5,	1,			2,		1,		2,		1,		1,		0.5,	1,			1,		1,		0.5,	1,		2,		1);
+		Type water		= new Type("Water",		"#6890F0",		1,		1,		0.5,	2,		0.5,	1,			1,		1,		1,		1,		2,		2,		1,			1,		1,		0.5,	1,		1,		1);
+		Type electric	= new Type("Electric",	"#F8D030",		1,		1,		0.5,	1,		2,		0.5,		1,		2,		1,		1,		0,		1,		1,			1,		1,		0.5,	1,		1,		1);
+		Type ice		= new Type("Ice",		"#98D8D8",		1,		1,		2,		0.5,	0.5,	1,			0.5,	2,		1,		1,		2,		1,		1,			1,		1,		2,		1,		0.5,	1);
+		Type flying		= new Type("Flying",	"#A890F0",		1,		1,		2,		1,		1,		0.5,		1,		1,		2,		1,		1,		0.5,	2,			1,		1,		1,		1,		0.5,	1);
+		Type bug		= new Type("Bug",		"#A8B820",		1,		1,		2,		0.5,	1,		1,			1,		0.5,	1,		0.5,	1,		1,		0.5,		2,		0.5,	1,		2,		0.5,	0.5);
 		Type poison		= new Type("Poison",	"#A040A0",		1,		1,		2,		1,		1,		1,			1,		1,		1,		0.5,	0.5,	0.5,	1,			1,		0.5,	1,		1,		0,		2);
-		Type ground		= new Type("Ground",	"brown",		1,		1,		0.5,	2,		1,		2,			1,		0,		0.5,	2,		1,		2,		1,			1,		1,		1,		1,		2,		1);
-		Type rock		= new Type("Rock",		"brown",		1,		1,		1,		2,		1,		1,			2,		2,		2,		1,		0.5,	1,		0.5,		1,		1,		1,		1,		0.5,	1);
-		Type fighting	= new Type("Fighting",	"red",			1,		2,		1,		1,		1,		1,			2,		0.5,	0.5,	0.5,	1,		2,		1,			0.5,	0,		1,		2,		2,		0.5);
-		Type psychic	= new Type("Psychic",	"purple",		1,		1,		1,		1,		1,		1,			1,		1,		1,		2,		1,		1,		2,			0.5,	1,		1,		0,		0.5,	1);
-		Type ghost		= new Type("Ghost",		"purple",		1,		0,		1,		1,		1,		1,			1,		1,		1,		1,		1,		1,		1,			2,		2,		1,		0.5,	1,		1);
-		Type dragon		= new Type("Dragon",	"purple",		1,		1,		1,		1,		1,		1,			1,		1,		1,		1,		1,		1,		1,			1,		1,		2,		1,		0.5,	0);
-		Type dark		= new Type("Dark",		"black",		1,		1,		1,		1,		1,		1,			1,		1,		1,		1,		1,		1,		0.5,		2,		2,		1,		0.5,	1,		0.5);
-		Type steel		= new Type("Steel",		"grey",			1,		1,		1,		0.5,	0.5,	0.5,		2,		1,		1,		1,		1,		2,		1,			1,		1,		1,		1,		0.5,	2);
-		Type fairy		= new Type("Fairy",		"pink",			1,		1,		1,		0.5,	1,		1,			1,		1,		1,		0.5,	1,		1,		2,			1,		1,		2,		2,		0.5,	1);
+		Type ground		= new Type("Ground",	"#E0C068",		1,		1,		0.5,	2,		1,		2,			1,		0,		0.5,	2,		1,		2,		1,			1,		1,		1,		1,		2,		1);
+		Type rock		= new Type("Rock",		"#B8A038",		1,		1,		1,		2,		1,		1,			2,		2,		2,		1,		0.5,	1,		0.5,		1,		1,		1,		1,		0.5,	1);
+		Type fighting	= new Type("Fighting",	"#C03028",		1,		2,		1,		1,		1,		1,			2,		0.5,	0.5,	0.5,	1,		2,		1,			0.5,	0,		1,		2,		2,		0.5);
+		Type psychic	= new Type("Psychic",	"#F85888",		1,		1,		1,		1,		1,		1,			1,		1,		1,		2,		1,		1,		2,			0.5,	1,		1,		0,		0.5,	1);
+		Type ghost		= new Type("Ghost",		"#705898",		1,		0,		1,		1,		1,		1,			1,		1,		1,		1,		1,		1,		1,			2,		2,		1,		0.5,	1,		1);
+		Type dragon		= new Type("Dragon",	"#7038F8",		1,		1,		1,		1,		1,		1,			1,		1,		1,		1,		1,		1,		1,			1,		1,		2,		1,		0.5,	0);
+		Type dark		= new Type("Dark",		"#705848",		1,		1,		1,		1,		1,		1,			1,		1,		1,		1,		1,		1,		0.5,		2,		2,		1,		0.5,	1,		0.5);
+		Type steel		= new Type("Steel",		"#B8B8D0",		1,		1,		1,		0.5,	0.5,	0.5,		2,		1,		1,		1,		1,		2,		1,			1,		1,		1,		1,		0.5,	2);
+		Type fairy		= new Type("Fairy",		"#EE99AC",		1,		1,		1,		0.5,	1,		1,			1,		1,		1,		0.5,	1,		1,		2,			1,		1,		2,		2,		0.5,	1);
 
 		ArrayList<Pokemon> mons = new ArrayList<Pokemon>();
 		ArrayList<Moves> moveset = new ArrayList<Moves>();
