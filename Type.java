@@ -129,27 +129,3 @@ public class Type{
 		return fairy;
 	}
 }
-
-/*
-
-
-	private Type None 		= new Type(			Normal: 1	Grass: 1 	Fire: 1 	Water: 1 	Electric: 1 	Ice: 1 		Flying: 1 		Bug: 1 		Poison: 1 		Ground: 1 		Rock: 1 	Fighting: 1 	Psychic: 1 		Ghost: 1 	Dragon: 1 		Dark: 1		Steel: 1		Fairy: 1);
-	private Type Normal 	= new Type(None: 1 	Normal: 1 	Grass: 1 	Fire: 1 	Water: 1 	Electric: 1 	Ice: 1 		Flying: 1 		Bug: 1 		Poison: 1 		Ground: 1 		Rock: 0.5 	Fighting: 1 	Psychic: 1 		Ghost: 0 	Dragon: 1 		Dark: 1 	Steel: 0.5		Fairy: 1);
-	private Type Grass 		= new Type(None: 1 	Normal: 1 	Grass: 1 	Fire: 1 	Water: 1 	Electric: 1 	Ice: 1 		Flying: 1 		Bug: 1 		Poison: 1 		Ground: 1 		Rock: 0.5 	Fighting: 1 	Psychic: 1 		Ghost: 0 	Dragon: 1 		Dark: 1 	Steel: 0.5		Fairy: 1);
-	private Type Fire 		= new Type(None: 1 	Normal: 1 	Grass: 1 	Fire: 1 	Water: 1 	Electric: 1 	Ice: 1 		Flying: 1 		Bug: 1 		Poison: 1 		Ground: 1 		Rock: 0.5 	Fighting: 1 	Psychic: 1 		Ghost: 0 	Dragon: 1 		Dark: 1 	Steel: 0.5		Fairy: 1);
-	private Type Water 		= new Type(None: 1 	Normal: 1 	Grass: 1 	Fire: 1 	Water: 1 	Electric: 1 	Ice: 1 		Flying: 1 		Bug: 1 		Poison: 1 		Ground: 1 		Rock: 0.5 	Fighting: 1 	Psychic: 1 		Ghost: 0 	Dragon: 1 		Dark: 1 	Steel: 0.5		Fairy: 1);
-	private Type Electric 	= new Type(None: 1 	Normal: 1 	Grass: 1 	Fire: 1 	Water: 1 	Electric: 1 	Ice: 1 		Flying: 1 		Bug: 1 		Poison: 1 		Ground: 1 		Rock: 0.5 	Fighting: 1 	Psychic: 1 		Ghost: 0 	Dragon: 1 		Dark: 1 	Steel: 0.5		Fairy: 1);
-	private Type Ice 		= new Type(None: 1 	Normal: 1 	Grass: 1 	Fire: 1 	Water: 1 	Electric: 1 	Ice: 1 		Flying: 1 		Bug: 1 		Poison: 1 		Ground: 1 		Rock: 0.5 	Fighting: 1 	Psychic: 1 		Ghost: 0 	Dragon: 1 		Dark: 1 	Steel: 0.5		Fairy: 1);
-	private Type Flying 	= new Type(None: 1 	Normal: 1 	Grass: 1 	Fire: 1 	Water: 1 	Electric: 1 	Ice: 1 		Flying: 1 		Bug: 1 		Poison: 1 		Ground: 1 		Rock: 0.5 	Fighting: 1 	Psychic: 1 		Ghost: 0 	Dragon: 1 		Dark: 1 	Steel: 0.5		Fairy: 1);
-	private Type Bug 		= new Type(None: 1 	Normal: 1 	Grass: 1 	Fire: 1 	Water: 1 	Electric: 1 	Ice: 1 		Flying: 1 		Bug: 1 		Poison: 1 		Ground: 1 		Rock: 0.5 	Fighting: 1 	Psychic: 1 		Ghost: 0 	Dragon: 1 		Dark: 1 	Steel: 0.5		Fairy: 1);
-	private Type Poison 	= new Type(None: 1 	Normal: 1 	Grass: 1 	Fire: 1 	Water: 1 	Electric: 1 	Ice: 1 		Flying: 1 		Bug: 1 		Poison: 1 		Ground: 1 		Rock: 0.5 	Fighting: 1 	Psychic: 1 		Ghost: 0 	Dragon: 1 		Dark: 1 	Steel: 0.5		Fairy: 1);
-	private Type Ground 	= new Type(None: 1 	Normal: 1 	Grass: 1 	Fire: 1 	Water: 1 	Electric: 1 	Ice: 1 		Flying: 1 		Bug: 1 		Poison: 1 		Ground: 1 		Rock: 0.5 	Fighting: 1 	Psychic: 1 		Ghost: 0 	Dragon: 1 		Dark: 1 	Steel: 0.5		Fairy: 1);
-	private Type Rock 		= new Type(None: 1 	Normal: 1 	Grass: 1 	Fire: 1 	Water: 1 	Electric: 1 	Ice: 1 		Flying: 1 		Bug: 1 		Poison: 1 		Ground: 1 		Rock: 0.5 	Fighting: 1 	Psychic: 1 		Ghost: 0 	Dragon: 1 		Dark: 1 	Steel: 0.5		Fairy: 1);
-	private Type Fighting 	= new Type(None: 1 	Normal: 1 	Grass: 1 	Fire: 1 	Water: 1 	Electric: 1 	Ice: 1 		Flying: 1 		Bug: 1 		Poison: 1 		Ground: 1 		Rock: 0.5 	Fighting: 1 	Psychic: 1 		Ghost: 0 	Dragon: 1 		Dark: 1 	Steel: 0.5		Fairy: 1);
-	private Type Psychic 	= new Type(None: 1 	Normal: 1 	Grass: 1 	Fire: 1 	Water: 1 	Electric: 1 	Ice: 1 		Flying: 1 		Bug: 1 		Poison: 1 		Ground: 1 		Rock: 0.5 	Fighting: 1 	Psychic: 1 		Ghost: 0 	Dragon: 1 		Dark: 1 	Steel: 0.5		Fairy: 1);
-	private Type Ghost 		= new Type(None: 1 	Normal: 1 	Grass: 1 	Fire: 1 	Water: 1 	Electric: 1 	Ice: 1 		Flying: 1 		Bug: 1 		Poison: 1 		Ground: 1 		Rock: 0.5 	Fighting: 1 	Psychic: 1 		Ghost: 0 	Dragon: 1 		Dark: 1 	Steel: 0.5		Fairy: 1);
-	private Type Dragon 	= new Type(None: 1 	Normal: 1 	Grass: 1 	Fire: 1 	Water: 1 	Electric: 1 	Ice: 1 		Flying: 1 		Bug: 1 		Poison: 1 		Ground: 1 		Rock: 0.5 	Fighting: 1 	Psychic: 1 		Ghost: 0 	Dragon: 1 		Dark: 1 	Steel: 0.5		Fairy: 1);	
-	private Type Dark 		= new Type(None: 1 	Normal: 1 	Grass: 1 	Fire: 1 	Water: 1 	Electric: 1 	Ice: 1 		Flying: 1 		Bug: 1 		Poison: 1 		Ground: 1 		Rock: 0.5 	Fighting: 1 	Psychic: 1 		Ghost: 0 	Dragon: 1 		Dark: 1 	Steel: 0.5		Fairy: 1);
-	private Type Steel 		= new Type(None: 1 	Normal: 1 	Grass: 1 	Fire: 1 	Water: 1 	Electric: 1 	Ice: 1 		Flying: 1 		Bug: 1 		Poison: 1 		Ground: 1 		Rock: 0.5 	Fighting: 1 	Psychic: 1 		Ghost: 0 	Dragon: 1 		Dark: 1 	Steel: 0.5		Fairy: 1);
-	private Type Fairy 		= new Type(None: 1 	Normal: 1 	Grass: 1 	Fire: 1 	Water: 1 	Electric: 1 	Ice: 1 		Flying: 1 		Bug: 1 		Poison: 1 		Ground: 1 		Rock: 0.5 	Fighting: 1 	Psychic: 1 		Ghost: 0 	Dragon: 1 		Dark: 1 	Steel: 0.5		Fairy: 1);
-	*/
