@@ -42,11 +42,15 @@ public class DamageCalc{
 		moveset.add(move3);
 		moveset.add(move4);
 
-		Pokemon venusaur		= new Pokemon("Venusaur",		grass,		poison, 	80, 	82, 	83, 	100, 	100, 	80,	moveset);
-		Pokemon blastoise		= new Pokemon("Blastoise",		water,		none, 		79, 	83, 	100,	85, 	105, 	78,	moveset);
+		Pokemon venusaur		= new Pokemon("Venusaur",		grass,		poison, 	80, 	82, 	83, 	100, 	100, 	80,		moveset);
+		Pokemon blastoise		= new Pokemon("Blastoise",		water,		none, 		79, 	83, 	100,	85, 	105, 	78,		moveset);
+		Pokemon charizard		= new Pokemon("Charizard",		fire,		flying,		78,		84,		78,		109,	85,		100,	moveset);
+		Pokemon kate			= new Pokemon("Kate",			fairy,		fighting,	69,		69,		69,		69,		69,		69,		moveset);
 
 		mons.add(venusaur);
 		mons.add(blastoise);
+		mons.add(charizard);
+		mons.add(kate);
 
 		try{
 			File newState = new File("fileName.json");

@@ -6,10 +6,11 @@
 
 			$mons = json_decode(file_get_contents('fileName.json'));
 			$natures = json_decode(file_get_contents('natures.json'));
+			$x = 1;
 
 		?>
 
-		<link rel="stylesheet" href="style">
+		<link rel="stylesheet" href="style.css">
 
 		<meta charset="UTF-8">
 
@@ -23,21 +24,21 @@
 
 		<div id="monName">
 			<?php 
-				echo $mons[0] -> name; 
+				echo $mons[$x] -> name; 
 			?>
 		</div>
 
 		<div id="types">
 
-			<div id="typeOne" value=<?php echo $mons[0] -> type1 -> colour; ?>>
+			<div id="typeOne" value=<?php echo $mons[$x] -> type1 -> colour; ?>>
 				<?php
-					echo $mons[0] -> type1 -> type; 
+					echo $mons[$x] -> type1 -> type; 
 				?>
 			</div>
 
-			<div id="typeTwo" value=<?php echo $mons[0] -> type2 -> colour; ?>>
+			<div id="typeTwo" value=<?php echo $mons[$x] -> type2 -> colour; ?>>
 				<?php
-					echo $mons[0] -> type2 -> type;
+					echo $mons[$x] -> type2 -> type;
 				?>
 			</div>
 
@@ -65,7 +66,7 @@
 							<label>HP</label>
 						</th>
 						<td>
-							<input onchange="HPFunc()" id="HPBase1" value=<?php echo $mons[0] -> hp?>>
+							<input onchange="HPFunc()" id="HPBase1" value=<?php echo $mons[$x] -> hp?>>
 						</td>
 						<td>
 							<input onchange="HPFunc()" id="HPIVs1" type="number" min="0" max="31" step="1" value="31" placeholder="0">
@@ -83,7 +84,7 @@
 							<label>Attack</label>
 						</th>
 						<td>
-							<input onchange="Func()" id="AtkBase1" value=<?php echo $mons[0] -> atk?>>
+							<input onchange="Func()" id="AtkBase1" value=<?php echo $mons[$x] -> atk?>>
 						</td>
 						<td>
 							<input onchange="Func()" id="AtkIVs1" type="number" min="0" max="31" step="1" value="31">
@@ -118,7 +119,7 @@
 							<label>Defence</label>
 						</th>
 						<td>
-							<input onchange="Func()" id="DefBase1" value=<?php echo $mons[0] -> def?>>
+							<input onchange="Func()" id="DefBase1" value=<?php echo $mons[$x] -> def?>>
 						</td>
 						<td>
 							<input onchange="Func()" id="DefIVs1" type="number" min="0" max="31" step="1" value="31">
@@ -153,7 +154,7 @@
 							<label>Sp. Atk</label>
 						</th>
 						<td>
-							<input onchange="Func()" id="SpAtkBase1" value=<?php echo $mons[0] -> spAtk?>>
+							<input onchange="Func()" id="SpAtkBase1" value=<?php echo $mons[$x] -> spAtk?>>
 						</td>
 						<td>
 							<input onchange="Func()" id="SpAtkIVs1" type="number" min="0" max="31" step="1" value="31">
@@ -188,7 +189,7 @@
 							<label>Sp. Def</label>
 						</th>
 						<td>
-							<input onchange="Func()" id="SpDefBase1" value=<?php echo $mons[0] -> spDef?>>
+							<input onchange="Func()" id="SpDefBase1" value=<?php echo $mons[$x] -> spDef?>>
 						</td>
 						<td>
 							<input onchange="Func()" id="SpDefIVs1" type="number" min="0" max="31" step="1" value="31">
@@ -223,7 +224,7 @@
 							<label>Speed</label>
 						</th>
 						<td>
-							<input onchange="Func()" id="SpdBase1" value=<?php echo $mons[0] -> spd?>>
+							<input onchange="Func()" id="SpdBase1" value=<?php echo $mons[$x] -> spd?>>
 						</td>
 						<td>
 							<input onchange="Func()" id="SpdIVs1" type="number" min="0" max="31" step="1" value="31">
