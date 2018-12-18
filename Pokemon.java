@@ -13,16 +13,16 @@ public class Pokemon{
 	private ArrayList<Moves> moveset = new ArrayList<Moves>();
 
 	public Pokemon(String Name, Type type1, Type type2, int Hp, int Atk, int Def, int SpAtk, int SpDef, int Spd, ArrayList<Moves> moveset){
-		this.type1 		= type1;
-		this.type2 		= type2;
-		this.Name 		= Name;
-		this.Hp 		= Hp;
-		this.Atk 		= Atk;
-		this.Def 		= Def;
-		this.SpAtk 		= SpAtk;
-		this.SpDef 		= SpDef;
-		this.Spd 		= Spd;
-		this.moveset 	= moveset;
+		this.type1 			= type1;
+		this.type2 			= type2;
+		this.Name 			= Name;
+		this.Hp 			= Hp;
+		this.Atk 			= Atk;
+		this.Def 			= Def;
+		this.SpAtk 			= SpAtk;
+		this.SpDef 			= SpDef;
+		this.Spd 			= Spd;
+		this.moveset 		= moveset;
 	}
 	
 	public String getName(){

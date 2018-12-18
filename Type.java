@@ -1,5 +1,6 @@
 public class Type{
 	private String typeName;
+	private String typeColour;
 	private double none;
 	private double normal;
 	private double grass;
@@ -20,8 +21,9 @@ public class Type{
 	private double steel;
 	private double fairy;
 
-	public Type(String typeName, double none, double normal, double grass, double fire, double water, double electric, double ice, double flying, double bug, double poison, double ground, double rock, double fighting, double psychic, double ghost, double dragon, double dark, double steel, double fairy){
+	public Type(String typeName, String typeColour, double none, double normal, double grass, double fire, double water, double electric, double ice, double flying, double bug, double poison, double ground, double rock, double fighting, double psychic, double ghost, double dragon, double dark, double steel, double fairy){
 		this.typeName	= typeName;
+		this.typeColour = typeColour;
 		this.none		= none;
 		this.normal		= normal;
 		this.grass		= grass;
@@ -45,6 +47,10 @@ public class Type{
 
 	public String getType(){
 		return typeName;
+	}
+
+	public String getColour(){
+		return typeColour;
 	}
 }
 

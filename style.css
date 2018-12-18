@@ -45,11 +45,11 @@ input{
 }
 
 #typeOne{
+	background-color: black;
 	margin-top: 20px;
 	border-radius: 40px;
 	color: white;
 	text-align: center;
-	background: #78C850;
 	padding: 5px;
 	width: 70px;
 	display: inline-block;

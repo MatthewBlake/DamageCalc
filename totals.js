@@ -1,3 +1,7 @@
+document.getElementById("typeOne").style.background = document.getElementById("typeOne").getAttribute("value");
+document.getElementById("typeTwo").style.background = document.getElementById("typeTwo").getAttribute("value");
+
+
 function total(base, IVs, EVs){
 	var x = base * 2 + 5;
 	var y = IVs;
@@ -131,17 +135,5 @@ function Func(){
 
 	else if(loss === "Spe"){
 		document.getElementById("SpdTotal1").innerHTML = parseInt(total(document.getElementById("SpdBase1").value, document.getElementById("SpdIVs1").value, document.getElementById("SpdEVs1").value)*0.9);
-	}
-
-	else{
-		document.getElementById("AtkTotal1").innerHTML = total(document.getElementById("AtkBase1").value, document.getElementById("AtkIVs1").value, document.getElementById("AtkEVs1").value);
-
-		document.getElementById("DefTotal1").innerHTML = total(document.getElementById("DefBase1").value, document.getElementById("DefIVs1").value, document.getElementById("DefEVs1").value);
-
-		document.getElementById("SpAtkTotal1").innerHTML = total(document.getElementById("SpAtkBase1").value, document.getElementById("SpAtkIVs1").value, document.getElementById("SpAtkEVs1").value);
-
-		document.getElementById("SpDefTotal1").innerHTML = total(document.getElementById("SpDefBase1").value, document.getElementById("SpDefIVs1").value, document.getElementById("SpDefEVs1").value);
-
-		document.getElementById("SpdTotal1").innerHTML = total(document.getElementById("SpdBase1").value, document.getElementById("SpdIVs1").value, document.getElementById("SpdEVs1").value);
 	}
 }

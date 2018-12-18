@@ -2,7 +2,14 @@
 <html lang="en">
 	<head>
 
-		<link rel="stylesheet" href="style.css">
+		<?php
+
+			$mons = json_decode(file_get_contents('fileName.json'));
+			$natures = json_decode(file_get_contents('natures.json'));
+
+		?>
+
+		<link rel="stylesheet" href="style">
 
 		<meta charset="UTF-8">
 
@@ -11,13 +18,6 @@
 	</head>
 
 	<body>
-
-		<?php
-
-			$mons = json_decode(file_get_contents('fileName.json'));
-			$natures = json_decode(file_get_contents('natures.json'));
-
-		?>
 
 		<div id="mon1">
 
@@ -29,13 +29,13 @@
 
 		<div id="types">
 
-			<div id="typeOne">
+			<div id="typeOne" value=<?php echo $mons[0] -> type1 -> colour; ?>>
 				<?php
 					echo $mons[0] -> type1 -> type; 
 				?>
 			</div>
 
-			<div id="typeTwo">
+			<div id="typeTwo" value=<?php echo $mons[0] -> type2 -> colour; ?>>
 				<?php
 					echo $mons[0] -> type2 -> type;
 				?>
