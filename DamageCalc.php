@@ -5,11 +5,11 @@
 		<?php
 			$mons = json_decode(file_get_contents('fileName.json'));
 			$natures = json_decode(file_get_contents('natures.json'));
-			$x = 5;
-			$y = 3;
+			$x = 1;
+			$y = 2;
 		?>
 
-		<link rel="stylesheet" href="style">
+		<link rel="stylesheet" href="style.css">
 
 		<meta charset="UTF-8">
 
@@ -326,7 +326,7 @@
 			</table>
 		</div>
 
-				<div id="mon2">
+		<div id="mon2">
 
 		<div id="monName2">
 			<?php 
@@ -352,7 +352,6 @@
 			<br>
 
 		</div>
-
 
 		<br>
 		
@@ -633,7 +632,7 @@
 		</div>
 	</div>
 
-		<script src="totals"></script>
+		<script src="totals.js"></script>
 
 	</body>
 
