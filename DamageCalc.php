@@ -5,11 +5,11 @@
 		<?php
 			$mons = json_decode(file_get_contents('fileName.json'));
 			$natures = json_decode(file_get_contents('natures.json'));
-			$x = 4;
-			$y = 2;
+			$x = 0;
+			$y = 1;
 		?>
 
-		<link rel="stylesheet" href="style">
+		<link rel="stylesheet" href="style.css">
 
 		<meta charset="UTF-8">
 
@@ -399,7 +399,7 @@
 							<input onchange="Func2()" id="AtkEVs2" type="number" min="0" max="252" step="4" value="0">
 						</td>
 						<td>
-							<span id="AtkTotal1"></span>
+							<span id="AtkTotal2"></span>
 						</td>
 						<td>
 							<select id="modifiers" class="calc-trigger">
@@ -632,10 +632,9 @@
 		</div>
 	</div>
 
-		<script src="totals.js"></script>
-		<script src="styleChange.js"></script>
+		<script src="totals"></script>
+		<script src="styleChange"></script>
 		<script src="hpFunctions.js"></script>
-		<script src="funcions.js"></script>
 
 	</body>
 

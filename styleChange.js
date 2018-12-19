@@ -9,3 +9,7 @@ document.getElementById("typeTwo2").style.background = document.getElementById("
 if("lightgrey" === document.getElementById("typeTwo").getAttribute("value")){
 	document.getElementById("typeTwo").style.color = "lightgrey";
 }
+
+if("lightgrey" === document.getElementById("typeTwo2").getAttribute("value")){
+	document.getElementById("typeTwo2").style.color = "lightgrey";
+}
