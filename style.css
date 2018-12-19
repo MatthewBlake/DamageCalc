@@ -21,9 +21,11 @@ input{
 #mon1{
 	position: absolute;
 	top: 100px;
-	left: 200px;
+	right: 60%;
 	background-color: #d3d3d3;
 	padding: 25px;
+	width: 400px;
+	max-width: 400px;
 }
 
 #monName{
@@ -67,12 +69,12 @@ input{
 }
 
 #mon2{
-	position: absolute;
-	top: 100px;
-	left: 800px;
+	position: relative;
+	top: 92px;
+	left: 60%;
 	background-color: #d3d3d3;
 	padding: 25px;
-	float: right;
+	max-width: 400px;
 }
 
 #monName2{
