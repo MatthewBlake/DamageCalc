@@ -4,10 +4,51 @@ body{
 
 input{
 	width: 40px;
+	border-radius: 8px
 }
 
 #title{
 	width: 120px;
+}
+
+#mons{
+	background: #eeeeee;
+}
+
+.move{
+	border: 1px solid black;
+	background: #e9e9e9;
+	height: 25px;
+	width: 200px;
+	
+}
+
+#mon1move1{
+	border-radius: 8px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+#mon1move4{
+	border-radius: 8px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+#mon2move1{
+	border-radius: 8px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+#mon2move4{
+	border-radius: 8px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+.move:hover{
+	background: #d3d3d3;
 }
 
 #total{
@@ -20,9 +61,7 @@ input{
 
 #mon1{
 	position: absolute;
-	top: 100px;
 	right: 60%;
-	background-color: #d3d3d3;
 	padding: 25px;
 	width: 400px;
 	max-width: 400px;
@@ -67,9 +106,7 @@ input{
 
 #mon2{
 	position: relative;
-	top: 92px;
 	left: 60%;
-	background-color: #d3d3d3;
 	padding: 25px;
 	max-width: 400px;
 }

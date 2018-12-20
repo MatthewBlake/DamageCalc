@@ -9,7 +9,7 @@
 			$y = 0;
 		?>
 
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style">
 
 		<meta charset="UTF-8">
 
@@ -24,40 +24,52 @@
 			<div id="mon1">
 
 				<div id="mon1Moves">
-					<div id="mon1move1">
-						<?php
-							echo $mons[$x] -> moveset[0] -> moveName ." - ";
-							echo $mons[$x] -> moveset[0] -> moveType -> type." - ";
-							echo $mons[$x] -> moveset[0] -> movePower;
-							echo nl2br("\n");
-						?>
+					<form action="">
+						<div id="mon1move1" class="move">
+							<label>
+								<input type="radio" name="moveSelect" value="1" checked="checked">
+									<?php
+										echo $mons[$x] -> moveset[0] -> moveName;
+										echo nl2br("\n");
+									?>
+								<br>
+							</label>
+						</div>
+
+						<div id="mon1move2" class="move">
+							<label>
+								<input type="radio" name="moveSelect" value="2">
+									<?php
+										echo $mons[$x] -> moveset[1] -> moveName ."  ";
+										echo nl2br("\n");
+									?>
+								<br>
+							</label>
+						</div>
+
+						<div id="mon1move3" class="move">
+							<label>
+								<input type="radio" name="moveSelect" value="3">
+									<?php
+										echo $mons[$x] -> moveset[2] -> moveName ."  ";
+										echo nl2br("\n");
+									?>
+								<br>
+							</label>
+						</div>
+
+						<div id="mon1move4" class="move">
+							<label>
+								<input type="radio" name="moveSelect" value="4">
+									<?php
+										echo $mons[$x] -> moveset[3] -> moveName ."  ";
+										echo nl2br("\n");
+		 							?>
+		 						<br>
+		 					</label>
+		 				</div>
+
 					</div>
-
-					<div id="mon1move2">
-						<?php
-							echo $mons[$x] -> moveset[1] -> moveName ."  ";
-							echo $mons[$x] -> moveset[1] -> moveType -> type;
-							echo nl2br("\n");
-						?>
-					</div>
-
-					<div id="mon1move3">
-						<?php
-							echo $mons[$x] -> moveset[2] -> moveName ."  ";
-							echo $mons[$x] -> moveset[2] -> moveType -> type;
-							echo nl2br("\n");
-						?>
-					</div>
-
-					<div id="mon1move4">
-						<?php
-							echo $mons[$x] -> moveset[3] -> moveName ."  ";
-							echo $mons[$x] -> moveset[3] -> moveType -> type;
-							echo nl2br("\n");
-		 				?>
-		 			</div>
-
-				</div>
 
 				<div id="monName">
 					<?php 
@@ -364,39 +376,52 @@
 			<div id="mon2">
 
 				<div id="mon2Moves">
-					<div id="mon2move1">
-						<?php
-							echo $mons[$y] -> moveset[0] -> moveName ."  ";
-							echo $mons[$y] -> moveset[0] -> moveType -> type;
-							echo nl2br("\n");
-						?>
+					<form action="">
+						<div id="mon2move1" class="move">
+							<label>
+								<input type="radio" name="moveSelect" value="1">
+									<?php
+										echo $mons[$y] -> moveset[0] -> moveName;
+										echo nl2br("\n");
+									?>
+								<br>
+							</label>
+						</div>
+
+						<div id="mon2move2" class="move">
+							<label>
+								<input type="radio" name="moveSelect" value="2">
+									<?php
+										echo $mons[$y] -> moveset[1] -> moveName ."  ";
+										echo nl2br("\n");
+									?>
+								<br>
+							</label>
+						</div>
+
+						<div id="mon2move3" class="move">
+							<label>
+								<input type="radio" name="moveSelect" value="3">
+									<?php
+										echo $mons[$y] -> moveset[2] -> moveName ."  ";
+										echo nl2br("\n");
+									?>
+								<br>
+							</label>
+						</div>
+
+						<div id="mon2move4" class="move">
+							<label>
+								<input type="radio" name="moveSelect" value="4">
+									<?php
+										echo $mons[$y] -> moveset[3] -> moveName ."  ";
+										echo nl2br("\n");
+		 							?>
+		 						<br>
+		 					</label>
+		 				</div>
+
 					</div>
-
-					<div id="mon2move2">
-						<?php
-							echo $mons[$y] -> moveset[1] -> moveName ."  ";
-							echo $mons[$y] -> moveset[1] -> moveType -> type;
-							echo nl2br("\n");
-						?>
-					</div>
-
-					<div id="mon2move3">
-						<?php
-							echo $mons[$y] -> moveset[2] -> moveName ."  ";
-							echo $mons[$y] -> moveset[2] -> moveType -> type;
-							echo nl2br("\n");
-						?>
-					</div>
-
-					<div id="mon2move4">
-						<?php
-							echo $mons[$y] -> moveset[3] -> moveName ."  ";
-							echo $mons[$y] -> moveset[3] -> moveType -> type;
-							echo nl2br("\n");
-		 				?>
-		 			</div>
-
-				</div>
 
 				<div id="monName2">
 					<?php 
