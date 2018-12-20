@@ -48,7 +48,13 @@ public class DamageCalc{
 		Pokemon butterfree		= new Pokemon("Butterfree",		bug,		flying,		60, 	45, 	50,		90, 	80, 	70,		moveset);
 		Pokemon beedrill		= new Pokemon("Beedrill",		bug,		poison, 	65, 	90, 	40, 	45, 	80, 	75,		moveset);
 		Pokemon pidgeot			= new Pokemon("Pidgeot",		normal,		flying,		83,		80,		75,		70,		70,		101,	moveset);
-
+		Pokemon raticate		= new Pokemon("Raticate",		normal,		none,		55,		81,		60,		50,		70,		97,		moveset);
+		Pokemon fearow 			= new Pokemon("Fearow",			normal,		flying,		65,		90,		65,		61,		61,		100,	moveset);
+		Pokemon arbok			= new Pokemon("Arbok",			poison,		none,		60,		95,		69,		65,		79,		80,		moveset);
+		Pokemon raichu			= new Pokemon("Raichu",			electric,	none,		60,		90,		55,		90,		80,		110,	moveset);
+		Pokemon sandslash		= new Pokemon("Sandslash",		ground,		none,		75,		100,	110,	45,		55,		65,		moveset);
+		Pokemon nidoqueen		= new Pokemon("Nidoqueen",		poison,		ground,		90,		92,		87,		75,		85,		76,		moveset);
+		Pokemon nidoking		= new Pokemon("Nidoking",		poison,		ground,		81,		102,	77,		85,		75,		85,		moveset);
 
 		mons.add(venusaur);
 		mons.add(blastoise);
@@ -56,6 +62,13 @@ public class DamageCalc{
 		mons.add(butterfree);
 		mons.add(beedrill);
 		mons.add(pidgeot);
+		mons.add(raticate);
+		mons.add(fearow);
+		mons.add(arbok);
+		mons.add(raichu);
+		mons.add(sandslash);
+		mons.add(nidoqueen);
+		mons.add(nidoking);
 
 		try{
 			File newState = new File("fileName.json");
