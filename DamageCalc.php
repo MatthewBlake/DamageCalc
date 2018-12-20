@@ -9,7 +9,7 @@
 			$y = 2;
 		?>
 
-		<link rel="stylesheet" href="style">
+		<link rel="stylesheet" href="style.css">
 
 		<meta charset="UTF-8">
 
@@ -731,7 +731,7 @@
 			</div>
 		</div>
 
-		<script src="totals"></script>
+		<script src="totals.js"></script>
 		<script src="styleChange.js"></script>
 		<script src="hpFunctions.js"></script>
 
