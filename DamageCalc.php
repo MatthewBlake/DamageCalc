@@ -5,8 +5,8 @@
 		<?php
 			$mons = json_decode(file_get_contents('fileName.json'));
 			$natures = json_decode(file_get_contents('natures.json'));
-			$x = 10;
-			$y = 7;
+			$x = 0;
+			$y = 0;
 		?>
 
 		<link rel="stylesheet" href="style.css">
@@ -18,9 +18,46 @@
 	</head>
 
 	<body>
+
 		<div id="mons">
 
 			<div id="mon1">
+
+				<div id="mon1Moves">
+					<div id="mon1move1">
+						<?php
+							echo $mons[$x] -> moveset[0] -> moveName ." - ";
+							echo $mons[$x] -> moveset[0] -> moveType -> type." - ";
+							echo $mons[$x] -> moveset[0] -> movePower;
+							echo nl2br("\n");
+						?>
+					</div>
+
+					<div id="mon1move2">
+						<?php
+							echo $mons[$x] -> moveset[1] -> moveName ."  ";
+							echo $mons[$x] -> moveset[1] -> moveType -> type;
+							echo nl2br("\n");
+						?>
+					</div>
+
+					<div id="mon1move3">
+						<?php
+							echo $mons[$x] -> moveset[2] -> moveName ."  ";
+							echo $mons[$x] -> moveset[2] -> moveType -> type;
+							echo nl2br("\n");
+						?>
+					</div>
+
+					<div id="mon1move4">
+						<?php
+							echo $mons[$x] -> moveset[3] -> moveName ."  ";
+							echo $mons[$x] -> moveset[3] -> moveType -> type;
+							echo nl2br("\n");
+		 				?>
+		 			</div>
+
+				</div>
 
 				<div id="monName">
 					<?php 
@@ -325,6 +362,41 @@
 			</div>
 
 			<div id="mon2">
+
+				<div id="mon2Moves">
+					<div id="mon2move1">
+						<?php
+							echo $mons[$y] -> moveset[0] -> moveName ."  ";
+							echo $mons[$y] -> moveset[0] -> moveType -> type;
+							echo nl2br("\n");
+						?>
+					</div>
+
+					<div id="mon2move2">
+						<?php
+							echo $mons[$y] -> moveset[1] -> moveName ."  ";
+							echo $mons[$y] -> moveset[1] -> moveType -> type;
+							echo nl2br("\n");
+						?>
+					</div>
+
+					<div id="mon2move3">
+						<?php
+							echo $mons[$y] -> moveset[2] -> moveName ."  ";
+							echo $mons[$y] -> moveset[2] -> moveType -> type;
+							echo nl2br("\n");
+						?>
+					</div>
+
+					<div id="mon2move4">
+						<?php
+							echo $mons[$y] -> moveset[3] -> moveName ."  ";
+							echo $mons[$y] -> moveset[3] -> moveType -> type;
+							echo nl2br("\n");
+		 				?>
+		 			</div>
+
+				</div>
 
 				<div id="monName2">
 					<?php 
