@@ -6,10 +6,10 @@ document.getElementById("monName2").style.background = document.getElementById("
 document.getElementById("typeOne2").style.background = document.getElementById("typeOne2").getAttribute("value");
 document.getElementById("typeTwo2").style.background = document.getElementById("typeTwo2").getAttribute("value");
 
-if("lightgrey" === document.getElementById("typeTwo").getAttribute("value")){
-	document.getElementById("typeTwo").style.color = "lightgrey";
+if("#eeeeee" === document.getElementById("typeTwo").getAttribute("value")){
+	document.getElementById("typeTwo").style.color = "#eeeeee";
 }
 
-if("lightgrey" === document.getElementById("typeTwo2").getAttribute("value")){
-	document.getElementById("typeTwo2").style.color = "lightgrey";
+if("#eeeeee" === document.getElementById("typeTwo2").getAttribute("value")){
+	document.getElementById("typeTwo2").style.color = "#eeeeee";
 }

@@ -5,8 +5,8 @@
 		<?php
 			$mons = json_decode(file_get_contents('fileName.json'));
 			$natures = json_decode(file_get_contents('natures.json'));
-			$x = 0;
-			$y = 0;
+			$x = 1;
+			$y = 2;
 		?>
 
 		<link rel="stylesheet" href="style">
@@ -70,6 +70,9 @@
 		 				</div>
 
 					</div>
+
+				<br>
+				<br>	
 
 				<div id="monName">
 					<?php 
@@ -423,6 +426,9 @@
 
 					</div>
 
+				<br>
+				<br>
+
 				<div id="monName2">
 					<?php 
 						echo $mons[$y] -> name; 
@@ -726,7 +732,7 @@
 		</div>
 
 		<script src="totals"></script>
-		<script src="styleChange"></script>
+		<script src="styleChange.js"></script>
 		<script src="hpFunctions.js"></script>
 
 	</body>
